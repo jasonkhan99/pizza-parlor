@@ -48,7 +48,7 @@ $(document).ready(function() {
     pizza.calculateSizeCost();
     pizza.calculateVeggieCost();
     pizza.calculateMeatCost();
-    $("h6").html("Your " + inputtedSize + " Pizza with " + inputtedToppings.join(", ") + " is $" + pizza.price.toFixed(2));
+    $("h2").html("Your " + inputtedSize + " " + inputtedToppings.join(", ") + " Pizza is $" + pizza.price.toFixed(2));
     console.log(inputtedSize);
     console.log(inputtedToppings);
     console.log(pizza);
