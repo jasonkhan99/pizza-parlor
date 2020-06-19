@@ -6,7 +6,9 @@ function Pizza(size, toppings) {
 Pizza.prototype.basePrice(size) {
   if (this.size === "small") {
     basePrice = 16;
-  }
+  } else if (this.size === "medium") {
+    basePrice = 20;
+  } 
 
 } 
 
