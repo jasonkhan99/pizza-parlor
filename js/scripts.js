@@ -27,6 +27,16 @@ Pizza.prototype.calculateVeggieCost = function() {
   return this.price;
 }
 
+Pizza.prototype.calculateMeatCost = function() {
+  const meat = ["curryGoat", "iguana", "jerkChicken", "saltFish", "shark"];  
+  for (let i=0; this.toppings.length > i; ++i) {
+    if (meat.includes(this.toppings[i])) {
+      this.price += 3;
+    }
+  }
+  return this.price;
+}
+
 
 
 // Pizza.prototype.cost() {
