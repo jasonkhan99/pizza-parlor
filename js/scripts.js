@@ -3,20 +3,29 @@ let testPizza = new Pizza("medium", ["jerkChicken", "pepper", "shadowBenny"]);
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
+  this.price = 14;
 }
 
 Pizza.prototype.calculateSizeCost = function() {
-  let basePrice = 14;
   if (this.size === "small") {
-    basePrice = basePrice;
+    this.price = price;
   } else if (this.size === "medium") {
-    basePrice += 4;
+    this.price += 4;
   } else if (this.size === "large") {
-    basePrice +=8;
+    this.price +=8;
   }
-  return basePrice;
+  return this.price;
 }
 
+Pizza.prototype.calculateVeggieCost = function() {
+  const veggie = ["chickpea", "garlic", "greenOnion", "pepper", "shadowBenny"];
+  for (let i=0; this.toppings.length > i; ++i) {
+    if (veggie.includes(this.toppings[i])) {
+      this.price += 1.5;
+    }
+  }
+  return this.price;
+}
 
 
 
