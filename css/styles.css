@@ -1,4 +1,5 @@
 body {
+  color: white;
   box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -9,9 +10,28 @@ body {
 }
 
 .container {
-  background: rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, 0.589);
   box-shadow: 0 15px 20px rgba(0, 0, 0, .5);
   padding: 50px;
   margin-top: 50px;
   border-radius: 3px;
+}
+
+.jumbotron {
+  background-color: rgb(167, 0, 0);
+}
+
+#sizeWell {
+  background-image: url(/Users/jasonkhan/Desktop/code/pizza-parlor/img/trinidad-flag.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.well {
+  background-color: rgb(167, 0, 0);
+}
+
+h3 {
+  color: black;
 }
