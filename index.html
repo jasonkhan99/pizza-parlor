@@ -14,12 +14,12 @@
       <div class="jumbotron">
         <h1>Welcome to Pizza Lime!</h1>
       </div>
-      <select class="form-control" id="selectSize">
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-      </select>
-      <form id="selectToppings">
+      <form id="buildPizza">
+        <select class="form-control" id="selectSize">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
         <div class="form-group">
           <input type="checkbox" name="pizzaToppings" value="chickpea">Chickpea<br>
           <input type="checkbox" name="pizzaToppings" value="garlic">Fried Garlic<br>
@@ -31,5 +31,8 @@
           <input type="checkbox" name="pizzaToppings" value="jerkChicken">Jerk Chicken<br>
           <input type="checkbox" name="pizzaToppings" value="saltFish">Salt Fish<br>
           <input type="checkbox" name="pizzaToppings" value="shark">Shark<br>
+        </div>
+        <button id="submitPizza" class="btn btn-success">Submit!</button>
+      </form>
   </body>
 </html>
