@@ -1,5 +1,3 @@
-// let testPizza = new Pizza("medium", ["jerkChicken", "pepper", "shadowBenny"]);
-
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
