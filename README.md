@@ -1,6 +1,6 @@
-# _Pizza Salaam_
+# _Pizza Lime_
 
-#### _An Indian fusion pizza parlor, 06/19/2020_
+#### _An Trinidadian fusion pizza parlor, 06/19/2020_
 
 #### By _**Jason Khan**_
 
