@@ -1,0 +1,7 @@
+body {
+  padding-top: 25px;
+  background-image: url(/Users/jasonkhan/Desktop/code/pizza-parlor/img/trinidad-landscape.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
