@@ -37,3 +37,9 @@ Pizza.prototype.calculateMeatCost = function() {
   return this.price;
 }
 
+$(document).ready(function() {
+  $("form#buildPizza").submit(function() {
+    event.preventDefault();
+    
+  });
+});
