@@ -18,7 +18,7 @@ Pizza.prototype.calculateSizeCost = function() {
 }
 
 Pizza.prototype.calculateVeggieCost = function() {
-  const veggie = ["chickpea", "garlic", "greenOnion", "pepper", "shadowBenny"];
+  const veggie = ["Chickpea", "Garlic", "Green Onion", "Pepper", "Shadow Benny"];
   for (let i=0; this.toppings.length > i; ++i) {
     if (veggie.includes(this.toppings[i])) {
       this.price += 1.5;
@@ -28,7 +28,7 @@ Pizza.prototype.calculateVeggieCost = function() {
 }
 
 Pizza.prototype.calculateMeatCost = function() {
-  const meat = ["curryGoat", "iguana", "jerkChicken", "saltFish", "shark"];  
+  const meat = ["Curry Goat", "Iguana", "Jerk Chicken", "Salt Fish", "Shark"];  
   for (let i=0; this.toppings.length > i; ++i) {
     if (meat.includes(this.toppings[i])) {
       this.price += 3;
@@ -45,10 +45,12 @@ $(document).ready(function() {
     $("input:checkbox[name=pizzaToppings]:checked").each(function() {
       inputtedToppings.push($(this).val());
     });
-    let pizza = new Pizza(inputtedSize, inputtedToppings, 14);
+    let price = 14;
+    let pizza = new Pizza(inputtedSize, inputtedToppings, price);
     pizza.calculateSizeCost();
     pizza.calculateVeggieCost();
     pizza.calculateMeatCost();
+    $("h6").html("Your " + inputtedSize + " Pizza with " + inputtedToppings.join(", ") + " is $" + pizza.price.toFixed(2));
     console.log(inputtedSize);
     console.log(inputtedToppings);
     console.log(pizza);
