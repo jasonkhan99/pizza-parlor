@@ -1,4 +1,4 @@
-let testPizza = new Pizza("medium", ["jerkChicken", "pepper", "shadowBenny"]);
+// let testPizza = new Pizza("medium", ["jerkChicken", "pepper", "shadowBenny"]);
 
 function Pizza(size, toppings) {
   this.size = size;
@@ -40,6 +40,14 @@ Pizza.prototype.calculateMeatCost = function() {
 $(document).ready(function() {
   $("form#buildPizza").submit(function() {
     event.preventDefault();
-    
+    let inputtedSize = $("#selectSize").val();
+    let inputtedToppings = [];
+    $("input:checkbox[name=pizzaToppings]:checked").each(function() {
+      inputtedToppings.push($(this).val());
+    });
+    let pizza = new Pizza(inputtedSize, inputtedToppings);
+    console.log(inputtedSize);
+    console.log(inputtedToppings);
+    console.log(pizza);
   });
 });
