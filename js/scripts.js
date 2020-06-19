@@ -1,16 +1,26 @@
-function Order() {
-  this.pizzas = [];
-  this.currentId = 0;
-}
+// function Order() {
+//   this.pizzas = [];
+//   this.currentId = 0;
+//   this.total = 0;
+// }
 
-Order.prototype.addPizza = function(pizza) {
-  this.pizzas.push(pizza);
-}
+// Order.prototype.addPizza = function(pizza) {
+//   pizza.id = this.assignId();
+//   this.pizzas.push(pizza);
+// }
 
-Order.prototype.assignId = function() {
-  this.currentId += 1;
-  return this.currentId;
-}
+// Order.prototype.assignId = function() {
+//   this.currentId += 1;
+//   return this.currentId;
+// }
+
+// Further Exploration that I will tinker with later
+// Order.prototype.orderCost = function() {    
+//   for (let i=0; i< this.pizzas.length; i++) {
+//     this.total += this.pizzas[i].pizza.price;
+//   }
+//   return this.total
+// }
 
 function Pizza(size, toppings) {
   this.size = size;
@@ -50,7 +60,6 @@ Pizza.prototype.calculateMeatCost = function() {
 }
 
 $(document).ready(function() {
-  let order = new Order();
   $("form#buildPizza").submit(function() {
     event.preventDefault();
     let inputtedSize = $("#selectSize").val();
@@ -64,10 +73,5 @@ $(document).ready(function() {
     pizza.calculateVeggieCost();
     pizza.calculateMeatCost();
     $("ol#output").append("<li> Your " + inputtedSize + " " + inputtedToppings.join(", ") + " Pizza is $" + pizza.price.toFixed(2) + "</li>");
-    order.addPizza(pizza);
-    console.log(inputtedSize);
-    console.log(inputtedToppings);
-    console.log(pizza);
-    console.log(order);
   });
 });
