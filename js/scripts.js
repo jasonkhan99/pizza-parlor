@@ -7,11 +7,11 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.calculateSizeCost = function() {
-  if (this.size === "small") {
-    this.price = price;
-  } else if (this.size === "medium") {
+  if (this.size === "Small") {
+    this.price = 14;
+  } else if (this.size === "Medium") {
     this.price += 4;
-  } else if (this.size === "large") {
+  } else if (this.size === "Large") {
     this.price +=8;
   }
   return this.price;
@@ -45,7 +45,10 @@ $(document).ready(function() {
     $("input:checkbox[name=pizzaToppings]:checked").each(function() {
       inputtedToppings.push($(this).val());
     });
-    let pizza = new Pizza(inputtedSize, inputtedToppings);
+    let pizza = new Pizza(inputtedSize, inputtedToppings, 14);
+    pizza.calculateSizeCost();
+    pizza.calculateVeggieCost();
+    pizza.calculateMeatCost();
     console.log(inputtedSize);
     console.log(inputtedToppings);
     console.log(pizza);
