@@ -53,3 +53,10 @@ h2 {
   text-align: center;
   color: black;
 }
+
+.outputText {
+  text-align: center;
+  color: black;
+  list-style-position: inside;
+  font-size: large;
+}

@@ -1,3 +1,11 @@
+function Order() {
+  this.pizzas = [];
+}
+
+Order.prototype.addPizza = function(pizza) {
+  this.pizzas.push(pizza);
+}
+
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
@@ -48,7 +56,7 @@ $(document).ready(function() {
     pizza.calculateSizeCost();
     pizza.calculateVeggieCost();
     pizza.calculateMeatCost();
-    $("h2").html("Your " + inputtedSize + " " + inputtedToppings.join(", ") + " Pizza is $" + pizza.price.toFixed(2));
+    $("ol#output").append("<li> Your " + inputtedSize + " " + inputtedToppings.join(", ") + " Pizza is $" + pizza.price.toFixed(2) + "</li>");
     console.log(inputtedSize);
     console.log(inputtedToppings);
     console.log(pizza);
