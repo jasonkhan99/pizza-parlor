@@ -44,6 +44,7 @@ Pizza.prototype.calculateMeatCost = function() {
 }
 
 $(document).ready(function() {
+  let order = new Order();
   $("form#buildPizza").submit(function() {
     event.preventDefault();
     let inputtedSize = $("#selectSize").val();
@@ -57,8 +58,10 @@ $(document).ready(function() {
     pizza.calculateVeggieCost();
     pizza.calculateMeatCost();
     $("ol#output").append("<li> Your " + inputtedSize + " " + inputtedToppings.join(", ") + " Pizza is $" + pizza.price.toFixed(2) + "</li>");
+    order.addPizza(pizza);
     console.log(inputtedSize);
     console.log(inputtedToppings);
     console.log(pizza);
+    console.log(order);
   });
 });
