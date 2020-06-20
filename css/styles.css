@@ -3,7 +3,7 @@ body {
   box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-image: url(/Users/jasonkhan/Desktop/code/pizza-parlor/img/trinidad-landscape.jpg);
+  background-image: url(https://assets.rappler.com/AF9EF9F058504773987B6BEC9EB74F9A/img/111FC201C16D46E2ABEFA028756F7BE7/la-trinidad-benguet-art-house-20160623-003.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@ body {
 }
 
 #sizeWell {
-  background-image: url(/Users/jasonkhan/Desktop/code/pizza-parlor/img/trinidad-flag.jpg);
+  background-image: url(https://static8.depositphotos.com/1011936/853/i/450/depositphotos_8538483-stock-photo-trinidadian-flag-in-the-wind.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

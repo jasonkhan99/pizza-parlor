@@ -20,13 +20,13 @@ Open by downloading:
 
 Open via Bash/GitBash:
 1. Clone this repository onto your computer:
-`git clone https://github.com/LINDGRENBA/pig-dice.git`
+`git clone https://github.com/jasonkhan99/pizza-parlor`
 2. Navigate into the `/pizza-parlor/` directory in Visual Studio Code or preferred text editor
 `code .`
 3. Open index.html in Chrome or preferred browser:
 `open index.html`
 
-#### Go here to see my live website! [https://jasonkhan99.github.io/pig-dice/](https://jasonkhan99.github.io/pig-dice/)
+#### Go here to see my live website! [https://jasonkhan99.github.io/pizza-parlor/](https://jasonkhan99.github.io/pizza-parlor/)
 
 ## Project Specifications
 
